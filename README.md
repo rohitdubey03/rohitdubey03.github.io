@@ -4,7 +4,7 @@
 
 ## PREVIEW:
 
-![alt text]()
+![alt text](https://github.com/rohitdubey03/rohitdubey03.github.io/blob/master/images/preview.png)
 
 ##### Website made with HTML, CSS and Javascript.
 
