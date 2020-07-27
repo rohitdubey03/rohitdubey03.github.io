@@ -1,0 +1,107 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Face mask detector</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Rohit Dubey</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">Overview</a></li>
+							<li class="active"><a href="IMP.html">Projects</a></li>
+							<li><a href="Resume.html">Resume</a></li>
+							<li><a href="about.html">About</a></li>
+							<li><a href="contact.html">Contact</a></li>	
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/rohitdubey1999/" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+							<li><a href="https://www.facebook.com/rohitiscute06" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="https://github.com/rohitdubey03" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<h1>Face Mask Detector</h1>
+									<p>In order to effectively prevent the spread of COVID19 virus, almost everyone wears a mask during coronavirus epidemic. Medical image processing is the most challenging and emerging field now a days. The goal of this project is to train a COVID-19 face mask detector with OpenCV, Keras/TensorFlow, and Deep Learning. We’ll use this Python script to train a face mask detector and review the results.</p>
+								</header>
+								<h3>METHODOLOGY</h3>
+								<div class="image main"><img src="images/pic44.jpg" alt="" /></div>
+								<ul class="actions special">
+									<li><a href="https://github.com/rohitdubey03/face-mask-detector" class="button large">GitHub Code</a></li>
+								</ul>
+								<p>In order to use facial marks to construct a data set of facial masks, we need to begin with an image of a person who does not wear a facial mask:</p>
+									<ul class="alt">
+										<li>We apply face detection from there to calculate the location of the bounding box in the image.</li>
+										<li>Once we know where in the image the face is, we can extract the face Region of Interest (ROI), and from there, we apply facial landmarks, allowing us to localize mouth, face, and eyes.</li>
+										<li>In order to apply masks, we need an image of a mask (with a transparent and high definition image). Add the mask to the detected face and then resize and rotate, placing it on the face.</li>
+										<li>Repeat this process for all input images</li>
+									</ul>
+								<div class="image main"><img src="images/pic45.png" alt="" /></div>
+								<h3>Training and Deployment</h3>
+								<p>1. Training: Train the mask and without mask images with an appropriate algorithm.</p>
+								<p>Deployment: Once the models are trained, then move on the loading mask detector, perform face detection, then classify each face.</p>
+								<div class="image main"><img src="images/pic46.png" alt="" /></div>
+								<p>As you can see, we are obtaining ~99% accuracy on our test set. Looking at the above figure, we can see there are little signs of overfitting, with the validation loss lower than the training loss. </p>
+							</section>
+
+
+ 					</div>
+						  
+					 
+				<!-- Footer -->
+				<footer id="footer">
+					<section class="split contact">
+						<section class="alt">
+							<h3>Address</h3>
+							<p>Visakhapatnam, India</p>
+						</section>
+						<section>
+							<h3>Phone</h3>
+							<p>+91-9553266257</p>
+						</section>
+						<section>
+							<h3>Email</h3>
+							<p>dubeyrohit1999@gmail.com</p>
+						</section>
+						<section>
+							<h3>Social</h3>
+							<ul class="icons alt">
+								<li><a href="https://www.linkedin.com/in/rohitdubey1999/" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+								<li><a href="https://www.facebook.com/rohitiscute06" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+								<li><a href="https://github.com/rohitdubey03" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+							</ul>
+						</section>
+					</section>
+				</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Watermark Generator</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Rohit Dubey</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">Overview</a></li>
+							<li class="active"><a href="IMP.html">Projects</a></li>
+							<li><a href="Resume.html">Resume</a></li>
+							<li><a href="about.html">About</a></li>
+							<li><a href="contact.html">Contact</a></li>	
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/rohitdubey1999/" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+							<li><a href="https://www.facebook.com/rohitiscute06" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="https://github.com/rohitdubey03" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<h1>Watermark Generator</h1>
+									<p>The process of embedding a unique and identifying pattern onto the image itself is known as Watermarking. Using digital watermarks, you can overlay your own name, logo, or company brand overtop your original work, thereby protecting the content and attributing yourself as the original creator.</p>
+								</header>
+								<h3>METHODOLOGY</h3>
+								<div class="image main"><img src="images/pic42.png" alt="" /></div>
+								<ul class="actions special">
+									<li><a href="https://github.com/rohitdubey03/Watermark-Generator" class="button large">GitHub Code</a></li>
+								</ul>
+								<p>In the above image, you can see the white rohitdubey03.github.io logo has been added as a watermark to the original image. Furthermore, this watermark is semi-transparent, allowing us to see the contents of the background image through the foreground watermark.</p>
+								<p>This watermark is a PNG image with four channels: a Red channel, a Green channel, a Blue channel, and an Alpha channel used to control the transparency of each of the pixels in the image. Values in our alpha channel can range [0, 255], where a value of 255 is 100% opaque (i.e., not transparent at all) while a value of 0 is 100% transparent. Values that fall between 0 and 255 have varying levels of transparency, where the smaller the alpha value, the more transparent the pixel is. </p>
+								<h3></h3>
+								<p>In order to create these digital watermarks with OpenCV, we leveraged PNG with alpha transparency. Utilizing alpha transparency can be quite tricky, especially since it appears that OpenCV does not automatically mask transparent pixels for each channel. Instead, you’ll need to manually perform this masking yourself by taking the bitwise AND  between the input channel and the alpha mask.</p>
+							</section>
+ 					</div>
+					 
+				<!-- Footer -->
+				<footer id="footer">
+					<section class="split contact">
+						<section class="alt">
+							<h3>Address</h3>
+							<p>Visakhapatnam, India</p>
+						</section>
+						<section>
+							<h3>Phone</h3>
+							<p>+91-9553266257</p>
+						</section>
+						<section>
+							<h3>Email</h3>
+							<p>dubeyrohit1999@gmail.com</p>
+						</section>
+						<section>
+							<h3>Social</h3>
+							<ul class="icons alt">
+								<li><a href="https://www.linkedin.com/in/rohitdubey1999/" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+								<li><a href="https://www.facebook.com/rohitiscute06" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+								<li><a href="https://github.com/rohitdubey03" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+							</ul>
+						</section>
+					</section>
+				</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

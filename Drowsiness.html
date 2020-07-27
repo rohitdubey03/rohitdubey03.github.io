@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Driver Drowsiness Detection</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Rohit Dubey</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">Overview</a></li>
+							<li class="active"><a href="IMP.html">Projects</a></li>
+							<li><a href="Resume.html">Resume</a></li>
+							<li><a href="about.html">About</a></li>
+							<li><a href="contact.html">Contact</a></li>	
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/rohitdubey1999/" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+							<li><a href="https://www.facebook.com/rohitiscute06" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="https://github.com/rohitdubey03" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<h1>Driver Drowsiness Detection</h1>
+									<p>This project describes a computer vision system that can automatically detect driver drowsiness in a real-time video stream and then play an alarm if the driver appears to be drowsy.</p>
+								</header>
+								<h3>METHODOLOGY</h3>
+								<div class="image main"><img src="images/pic37.png" alt="" /></div>
+								<ul class="actions special">
+									<li><a href="https://github.com/rohitdubey03/Drowsiness-Detector-OpenCV" class="button large">GitHub Code</a></li>
+								</ul>
+								<p>The general flow of our drowsiness detection algorithm is fairly straightforward. First, we’ll setup a camera that monitors a stream for faces. If a face is found, we apply facial landmark detection and extract the eye regions. Now that we have the eye regions, we can compute the eye aspect ratio to determine if the eyes are closed.If the eye aspect ratio indicates that the eyes have been closed for a sufficiently long enough amount of time, we’ll sound an alarm to wake up the driver.</p>
+								<div class="image main"><img src="images/pic38.jpg" alt="" /></div>
+								<p>Once we have our eye regions, we can apply the eye aspect ratio to determine if the eyes are closed. If the eyes have been closed for a sufficiently long enough period of time, we can assume the user is at risk of falling asleep and sound an alarm to grab their attention. A countless number of people drive on the highway day and night. Taxi drivers, bus drivers, truck drivers and people traveling long-distance suffer from lack of sleep. Due to which it becomes very dangerous to drive when feeling sleepy.</p>
+								<p>The facial landmarks produced by dlib are an indexable list. The dlib library ships with a Histogram of Oriented Gradients-based face detector along with a facial landmark predictor — we instantiate both of these. To extract the eye regions from a set of facial landmarks, we simply need to know the correct array slice indexes. </p>
+								<h3>Our drowsiness detector hinged on two important computer vision techniques:</h3>
+											<ul class="alt">
+												<li>Facial landmark detection</li>
+												<li>Eye aspect ratio</li>
+											</ul>
+							</section>
+
+
+ 					</div>
+						  
+					 
+				<!-- Footer -->
+				<footer id="footer">
+					<section class="split contact">
+						<section class="alt">
+							<h3>Address</h3>
+							<p>Visakhapatnam, India</p>
+						</section>
+						<section>
+							<h3>Phone</h3>
+							<p>+91-9553266257</p>
+						</section>
+						<section>
+							<h3>Email</h3>
+							<p>dubeyrohit1999@gmail.com</p>
+						</section>
+						<section>
+							<h3>Social</h3>
+							<ul class="icons alt">
+								<li><a href="https://www.linkedin.com/in/rohitdubey1999/" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+								<li><a href="https://www.facebook.com/rohitiscute06" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+								<li><a href="https://github.com/rohitdubey03" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+							</ul>
+						</section>
+					</section>
+				</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
