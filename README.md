@@ -2,6 +2,9 @@
 
 ## **Personal Portfolio**
 
+## PREVIEW:
+
+![alt text]()
 
 ##### Website made with HTML, CSS and Javascript.
 
